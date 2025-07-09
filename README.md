@@ -2,6 +2,9 @@
 AI-powered tool for detecting cancer cells in eye images using deep learning and image segmentation.
 
 
+![Uploading Screenshot from 2025-07-09 22-30-28.png…]()
+
+
 
 🧠 About the AI Model
 This repository contains a custom PyTorch implementation of a dual-purpose deep learning model that performs both semantic segmentation and image-level classification.
