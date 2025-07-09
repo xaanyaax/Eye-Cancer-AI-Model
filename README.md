@@ -49,7 +49,7 @@ Clone the repository to your local machine:
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/eye-cancer-model.git
+git clone https://github.com/xaanyaax/Eye-Cancer-AI-Model?tab=readme-ov-file
 cd eye-cancer-model
 Open the folder in VS Code:
 
