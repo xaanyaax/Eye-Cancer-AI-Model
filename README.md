@@ -17,3 +17,12 @@ High performance in detecting early-stage symptoms.
 
 ▶️ Watch the Walkthrough
 📺 YouTube Demo Video: Watch here
+
+🧩 Tech Stack
+⚙️ FastAPI (AI model backend)
+
+⚛️ React (Frontend interface)
+
+🔬 PyTorch + segmentation-models-pytorch
+
+🌐 CORS + Axios for API communication
