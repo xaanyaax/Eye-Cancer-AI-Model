@@ -17,7 +17,7 @@ High performance in detecting early-stage symptoms.
 The trained AI model (AI.pth) is not included in this repository due to size constraints.
 
 If you'd like access to the model file for research or development purposes, feel free to reach out to me via email:
-📩 your.email@example.com
+📩 aanyasingh282004@gmail.com
 
 Note: Model access is shared for academic or non-commercial use only.
 
