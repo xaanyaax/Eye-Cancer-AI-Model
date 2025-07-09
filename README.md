@@ -29,7 +29,7 @@ Note: Model access is shared for academic or non-commercial use only.
 
 
 ▶️ Watch the Walkthrough
-📺 YouTube Demo Video: Watch here
+📺 YouTube Demo Video: Watch here: 🔗https://youtu.be/zUUjR_xXQJg
 
 
 
