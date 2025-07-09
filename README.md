@@ -12,11 +12,26 @@ Focused on semantic segmentation to highlight cancerous regions.
 
 High performance in detecting early-stage symptoms.
 
+
+📦 AI Model Access
+The trained AI model (AI.pth) is not included in this repository due to size constraints.
+
+If you'd like access to the model file for research or development purposes, feel free to reach out to me via email:
+📩 your.email@example.com
+
+Note: Model access is shared for academic or non-commercial use only.
+
+
+
 🌐 Live Demo
 🚀 Try it out now: Visit Deployed Site
 
+
+
 ▶️ Watch the Walkthrough
 📺 YouTube Demo Video: Watch here
+
+
 
 🧩 Tech Stack
 ⚙️ FastAPI (AI model backend)
