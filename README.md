@@ -2,7 +2,8 @@
 AI-powered tool for detecting cancer cells in eye images using deep learning and image segmentation.
 
 
-![Uploading Screenshot from 2025-07-09 22-30-28.png…]()
+
+![Screenshot from 2025-07-09 22-30-28](https://github.com/user-attachments/assets/b0fe1c85-c73e-4c71-a5b3-bb89f369daf2)
 
 
 
