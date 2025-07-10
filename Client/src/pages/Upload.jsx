@@ -1,18 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import axios from 'axios';
-import { useNavigate } from "react-router-dom"
+import { useNavigate , useLocation } from "react-router-dom"
 
-export default function Home() {
+export default function Upload() {
+    
     const [selectedImages, setSelectedImages] = useState([]);
     const [uploadedImages, setUploadedImages] = useState([]);
     const [isDragging, setIsDragging] = useState(false);
     const [isUploading, setIsUploading] = useState(false);
     const navigate = useNavigate();
+    const location = useLocation();
 
     const handleFileSelect = (event) => {
         const files = Array.from(event.target.files);
         processFiles(files);
     };
+
+    
+    
+    // Inside component:
+    useEffect(() => {
+      if (!location.state) {
+        navigate("/");
+      }
+    }, [location.state, navigate]);
+    
 
     const processFiles = (files) => {
         const imageFiles = files.filter(file => file.type.startsWith('image/'));

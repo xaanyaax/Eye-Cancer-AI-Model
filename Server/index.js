@@ -3,13 +3,21 @@ import multer from 'multer';
 import cors from 'cors';
 import axios from 'axios';
 import FormData from 'form-data';
+import dotenv from 'dotenv'
+import connectDB from './database/connect.js'
+import userRoutes from './routes/userRoutes.js';
+
+dotenv.config()
 
 const app = express();
 const port = 3001;
 
+connectDB();
+
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use('/api/users', userRoutes);
 
 // Multer for file upload
 const upload = multer({ storage: multer.memoryStorage() });
@@ -46,6 +54,7 @@ app.post('/analyze', upload.single('file'), async (req, res) => {
 
         // Return result to frontend
         res.status(200).json({ success: true, result: response.data });
+
     } catch (error) {
         console.error('Error in /analyze:', error.message);
         res.status(500).json({ success: false, error: error.message });
