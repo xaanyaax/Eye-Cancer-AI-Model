@@ -40,9 +40,12 @@ This is a comprehensive AI model for eye cancer detection that combines state-of
 
 The trained AI model (AI.pth) is not included in this repository due to GitHub's file size limitations.
 
+If you'd like access to the model for research or development purposes, you can contact me here: 📩 aanyasingh282004@gmail.com
+
 ### 🧠 About the AI Model
 
 This repository contains a custom PyTorch implementation of a dual-purpose deep learning model that performs both semantic segmentation and image-level classification.
+⚠️ **Note**: Model access is shared for academic or non-commercial use only.
 
 - 🧱 Built on the segmentation_models_pytorch library
 - 🧠 Uses the SegFormer architecture with a ResNet-50 encoder  
@@ -50,9 +53,9 @@ This repository contains a custom PyTorch implementation of a dual-purpose deep 
 - 🧬 Trained on annotated ocular cancer datasets
 - 🎯 Optimized for early detection of eye cancer through pixel-level predictions
 
-If you'd like access to the model for research or development purposes, you can contact me here: 📩 aanyasingh282004@gmail.com
 
-⚠️ **Note**: Model access is shared for academic or non-commercial use only.
+
+
 
 ### 🌐 Live Demo 
 
