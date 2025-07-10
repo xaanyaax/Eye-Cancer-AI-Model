@@ -45,6 +45,8 @@ If you'd like access to the model for research or development purposes, you can 
 ### 🧠 About the AI Model
 
 This repository contains a custom PyTorch implementation of a dual-purpose deep learning model that performs both semantic segmentation and image-level classification.
+
+
 ⚠️ **Note**: Model access is shared for academic or non-commercial use only.
 
 - 🧱 Built on the segmentation_models_pytorch library
@@ -127,36 +129,10 @@ npm install
 npm start
 ```
 
-## Project Structure
 
-```
-Eye-Cancer-AI-Model/
-├── Model/                    # Backend FastAPI application
-│   ├── main.py              # FastAPI server entry point
-│   ├── models/              # AI model files
-│   ├── utils/               # Utility functions
-│   └── requirements.txt     # Python dependencies
-├── Client/                  # Frontend React application
-│   ├── src/                 # React source code
-│   ├── public/              # Public assets
-│   └── package.json         # Node.js dependencies
-├── assets/                  # Project assets and documentation
-└── README.md               # This file
-```
 
-## API Documentation
 
-Once the backend is running, access the interactive API documentation at:
-- **Swagger UI**: `http://localhost:8000/docs`
-- **ReDoc**: `http://localhost:8000/redoc`
 
-## Contributing
-
-We welcome contributions! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Support
 
