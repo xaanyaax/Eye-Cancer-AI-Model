@@ -10,15 +10,7 @@ AI-powered tool for detecting cancer cells in eye images using deep learning and
   <img src="assets/logo/eye-cancer-ai.jpg" width="300" alt="Eye Cancer AI Model" />
 </p>
 
-# Eye Cancer AI Detection Model
 
-### 🧠 Advanced Deep Learning Solution for Early Ocular Cancer Detection
-
-[![Dependency Status][downloads-image]][npm-url] ![Model Accuracy](https://img.shields.io/badge/accuracy-94.2%25-brightgreen)
-![Commit Activity](https://img.shields.io/github/commit-activity/m/xaanyaax/Eye-Cancer-AI-Model/main?label=commit%20activity%20on%20main)
-![Contributors](https://img.shields.io/github/contributors/xaanyaax/Eye-Cancer-AI-Model?label=contributors%20on%20all%20branches)
-![Python Version](https://img.shields.io/badge/python-3.8+-blue)
-![PyTorch Version](https://img.shields.io/badge/pytorch-2.0+-orange)
 
 Eye Cancer AI Detection Model is a PyTorch implementation of advanced computer vision techniques for early ocular cancer detection, featuring dual-purpose semantic segmentation and image classification capabilities maintained by [Medical AI Research Team](https://github.com/xaanyaax).
 
