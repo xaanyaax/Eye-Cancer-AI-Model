@@ -37,11 +37,10 @@ const userSchema = new mongoose.Schema(
       default: '',
     },
     eyeSide: {
-        type: String,
-        enum: ['Left', 'Right', 'Both'], // ← matches frontend
-        required: true,
-      }
-      
+      type: String,
+      enum: ['Left Eye', 'Right Eye', 'Both Eye'],
+      required: true,
+    },
   },
   {
     timestamps: true, // Adds createdAt and updatedAt
