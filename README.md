@@ -6,6 +6,9 @@ AI-powered tool for detecting cancer cells in eye images using deep learning and
 ![Screenshot from 2025-07-09 22-30-28](https://github.com/user-attachments/assets/b0fe1c85-c73e-4c71-a5b3-bb89f369daf2)
 
 
+🟥 AI Model Access
+The trained AI model (AI.pth) is not included in this repository due to GitHub’s file size limitations.
+
 
 🧠 About the AI Model
 This repository contains a custom PyTorch implementation of a dual-purpose deep learning model that performs both semantic segmentation and image-level classification.
@@ -20,8 +23,6 @@ This repository contains a custom PyTorch implementation of a dual-purpose deep 
 
 🎯 Optimized for early detection of eye cancer through pixel-level predictions
 
-📦 AI Model Access
-The trained AI model (AI.pth) is not included in this repository due to GitHub’s file size limitations.
 
 If you'd like access to the model for research or development purposes, you can contact me here:
 📩 aanyasingh282004@gmail.com
