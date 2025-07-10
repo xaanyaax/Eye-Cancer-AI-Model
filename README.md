@@ -6,13 +6,10 @@ AI-powered tool for detecting cancer cells in eye images using deep learning and
 ![Screenshot from 2025-07-09 22-30-28](https://github.com/user-attachments/assets/b0fe1c85-c73e-4c71-a5b3-bb89f369daf2)
 
 
-<p align="center">
-  <img src="assets/logo/eye-cancer-ai.jpg" width="300" alt="Eye Cancer AI Model" />
-</p>
 
 
 
-Eye Cancer AI Detection Model is a PyTorch implementation of advanced computer vision techniques for early ocular cancer detection, featuring dual-purpose semantic segmentation and image classification capabilities maintained by [Medical AI Research Team](https://github.com/xaanyaax).
+Eye Cancer AI Detection Model is a PyTorch implementation of advanced computer vision techniques for early ocular cancer detection, featuring dual-purpose semantic segmentation and image classification capabilities.
 
 ## Installation
 
