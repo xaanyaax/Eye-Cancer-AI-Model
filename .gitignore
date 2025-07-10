@@ -1,2 +1,5 @@
+# Ignore everything inside Model folder
+Model/*
 
-Model/
+# But do not ignore app.py inside Model
+!Model/app.py
