@@ -46,6 +46,11 @@ const userSchema = new mongoose.Schema(
       required: true,
       unique: true 
     },
+       predictionResults: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'PredictionResult'
+  }]
+    ,
     dateOfRegistration: {
       type: Date,
       default: Date.now,

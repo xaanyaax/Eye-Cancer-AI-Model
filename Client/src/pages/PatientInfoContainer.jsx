@@ -25,6 +25,9 @@ const PatientInfoContainer = () => {
     }
   };
 
+
+  console.log("PatientInfoContainer rendered" , searchResult);
+
   return (
     <PatientInfoPage
       onSearch={handleSearch}

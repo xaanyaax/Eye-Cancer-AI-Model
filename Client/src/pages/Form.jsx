@@ -143,8 +143,11 @@ export default function PatientIntakeForm() {
 
       console.log("Form submitted successfully:", response.data);
 
+      //set search params patientId using response.data.patientId
+
       // Navigate to upload page with form data
-      navigate("/upload", { state: formData });
+      const patientId = response.data.patientId;
+navigate(`/upload?patientId=${patientId}`, { state: formData });
 
       // Show success message
       alert("✅ Patient information submitted successfully!");
@@ -471,7 +474,6 @@ export default function PatientIntakeForm() {
     </div>
   );
 }
-
 
 
 

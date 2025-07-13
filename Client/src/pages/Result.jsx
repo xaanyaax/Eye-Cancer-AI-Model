@@ -172,21 +172,34 @@ export default function Results() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Personal Information */}
             <div className="space-y-4">
+              
+               <div>
+  <label className="block text-sm font-medium text-gray-700 mb-1">
+    Patient ID
+  </label>
+  <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">
+    {analysisResult?.user?.patientId || "N/A"}
+  </p>
+</div>
+
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Full Name
                 </label>
                 <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">
-                  {analysisResult.fullName || "N/A"}
+                  {analysisResult?.user?.fullName || "N/A"}
                 </p>
               </div>
+
+             
+
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
                     Date of Birth
                   </label>
                   <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">
-                    {formatDate(analysisResult.dateOfBirth)}
+                    {formatDate(analysisResult?.user?.dateOfBirth)}
                   </p>
                 </div>
                 <div>
@@ -194,7 +207,7 @@ export default function Results() {
                     Age
                   </label>
                   <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">
-                    {calculateAge(analysisResult.dateOfBirth)} years
+                    {calculateAge(analysisResult?.user?.dateOfBirth)} years
                   </p>
                 </div>
               </div>
@@ -203,7 +216,7 @@ export default function Results() {
                   Gender
                 </label>
                 <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">
-                  {analysisResult.gender || "N/A"}
+                  {analysisResult?.user?.gender || "N/A"}
                 </p>
               </div>
               <div>
@@ -211,7 +224,7 @@ export default function Results() {
                   Phone Number
                 </label>
                 <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">
-                  {analysisResult.phoneNumber || "N/A"}
+                  {analysisResult?.user?.phoneNumber || "N/A"}
                 </p>
               </div>
               <div>
@@ -219,7 +232,7 @@ export default function Results() {
                   Address
                 </label>
                 <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">
-                  {analysisResult.address || "N/A"}
+                  {analysisResult?.user?.address || "N/A"}
                 </p>
               </div>
             </div>
@@ -231,7 +244,7 @@ export default function Results() {
                   Eye Side
                 </label>
                 <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">
-                  {analysisResult.eyeSide || "N/A"}
+                  {analysisResult?.user?.eyeSide || "N/A"}
                 </p>
               </div>
               <div>
@@ -239,7 +252,7 @@ export default function Results() {
                   Family History of Cancer
                 </label>
                 <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">
-                  {analysisResult.familyHistoryOfCancer || "No"}
+                  {analysisResult?.user?.familyHistoryOfCancer || "No"}
                 </p>
               </div>
               <div>
@@ -247,7 +260,7 @@ export default function Results() {
                   Previous Diagnosis
                 </label>
                 <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">
-                  {analysisResult.previousDiagnosis ||
+                  {analysisResult?.user?.previousDiagnosis ||
                     "No previous diagnosis recorded"}
                 </p>
               </div>
@@ -256,7 +269,7 @@ export default function Results() {
                   Ongoing Treatments
                 </label>
                 <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">
-                  {analysisResult.ongoingTreatments || "No ongoing treatments"}
+                  {analysisResult?.user?.ongoingTreatments || "No ongoing treatments"}
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
@@ -265,7 +278,7 @@ export default function Results() {
                     Record Created
                   </label>
                   <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">
-                    {formatDate(analysisResult.createdAt)}
+                    {formatDate(analysisResult?.user?.createdAt)}
                   </p>
                 </div>
                 <div>
@@ -273,7 +286,7 @@ export default function Results() {
                     Last Updated
                   </label>
                   <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">
-                    {formatDate(analysisResult.updatedAt)}
+                    {formatDate(analysisResult?.user?.updatedAt)}
                   </p>
                 </div>
               </div>
@@ -284,4 +297,3 @@ export default function Results() {
     </div>
   );
 }
-

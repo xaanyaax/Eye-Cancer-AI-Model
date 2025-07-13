@@ -1,6 +1,8 @@
 import React, { useState , useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate , useLocation } from "react-router-dom"
+import { useSearchParams } from 'react-router-dom';
+
 
 export default function Upload() {
     
@@ -10,6 +12,10 @@ export default function Upload() {
     const [isUploading, setIsUploading] = useState(false);
     const navigate = useNavigate();
     const location = useLocation();
+    // Use useSearchParams to get the patientId from the URL
+  const [searchParams] = useSearchParams();
+  
+  const patientId = searchParams.get('patientId');
 
     const handleFileSelect = (event) => {
         const files = Array.from(event.target.files);
@@ -76,7 +82,7 @@ export default function Upload() {
             const formData = new FormData();
             formData.append('file', selectedImages[0].file); // send only 1 file
 
-            const response = await axios.post('http://localhost:3001/analyze', formData, {
+            const response = await axios.post(`http://localhost:3001/analyze?patientId=${patientId}`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
@@ -104,7 +110,8 @@ export default function Upload() {
                   },
                   originalImage: {
                     base64: selectedImages[0].preview.split(',')[1],
-                  }
+                  },
+                  user: response.data.user // Pass user data to Result page
                 }
               });
               

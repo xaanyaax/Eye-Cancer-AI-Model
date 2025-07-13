@@ -1,5 +1,5 @@
 import express from 'express';
-import User from '../Models/User.js';
+import User from '../models/User.js';
 import { v4 as uuidv4 } from 'uuid';
 
 
