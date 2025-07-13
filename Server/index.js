@@ -6,6 +6,7 @@ import FormData from 'form-data';
 import dotenv from 'dotenv'
 import connectDB from './database/connect.js'
 import userRoutes from './routes/userRoutes.js';
+import patientRoutes from './routes/patientRoutes.js'
 
 dotenv.config()
 
@@ -18,6 +19,7 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 app.use('/api/users', userRoutes);
+app.use('/api/patients' , patientRoutes)
 
 // Multer for file upload
 const upload = multer({ storage: multer.memoryStorage() });
@@ -43,14 +45,6 @@ app.post('/analyze', upload.single('file'), async (req, res) => {
         });
 
         console.log('FastAPI responded with:', response.data);
-
-
-        // const prediction = response.data.result.classification_prediction;
-        // const probabilities = response.data.result.classification_probabilities;
-
-        // alert(`Prediction: ${prediction}\nProbabilities: ${probabilities.join(', ')}`);
-
-
 
         // Return result to frontend
         res.status(200).json({ success: true, result: response.data });

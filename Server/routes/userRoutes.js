@@ -1,17 +1,32 @@
 import express from 'express';
-import User from '../UserModel/User.js';
+import User from '../Models/User.js';
+import { v4 as uuidv4 } from 'uuid';
+
 
 const router = express.Router();
 
-// POST /api/users
-router.post('/', async (req, res) => {
+// POST /api/users/form
+router.post('/form', async (req, res) => {
   try {
-    const user = await User.create(req.body);
-    res.status(201).json({ success: true, user });
+    const userData = req.body;
+
+    // Auto-generate unique patientId using uuid
+    userData.patientId = uuidv4();
+
+    const user = await User.create(userData);
+
+    // ✅ Return patientId clearly
+    res.status(201).json({
+      success: true,
+      message: 'User registered successfully',
+      patientId: user.patientId,
+      user
+    });
   } catch (err) {
     console.error('❌ Failed to save user:', err);
     res.status(400).json({ success: false, message: err.message });
   }
 });
+
 
 export default router;
