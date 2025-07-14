@@ -303,6 +303,20 @@ const PatientInfoPage = ({
                 className="w-48 h-48 object-contain border rounded"
               />
             </div>
+
+            {/* Overlay Image */}
+            {/* Segmentation Mask */}
+            <div>
+              <p className="text-sm text-gray-600 mb-1">Segmentation Mask</p>
+              <img
+                src={`data:image/png;base64,${scan.overlay_image_base64}`}
+                alt="Mask"
+                className="w-48 h-48 object-contain border rounded"
+              />
+            </div>
+
+
+
           </div>
         </div>
       ))}
