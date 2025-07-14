@@ -59,10 +59,6 @@ This repository contains a custom PyTorch implementation of a dual-purpose deep 
 
 
 
-### 🌐 Live Demo 
-
-🚀 **Try it out now**: [Visit Deployed Site](https://your-deployed-site.com)
-
 ### ▶️ Watch the Walkthrough 
 
 📺 **YouTube Demo**: https://youtu.be/zUUjR_xXQJg
