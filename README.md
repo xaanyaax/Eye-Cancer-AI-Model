@@ -61,7 +61,7 @@ This repository contains a custom PyTorch implementation of a dual-purpose deep 
 
 ### ▶️ Watch the Walkthrough 
 
-📺 **YouTube Demo**: https://youtu.be/zUUjR_xXQJg
+📺 **YouTube Demo**: https://www.youtube.com/watch?v=tYA1Q-OWQ7c&ab_channel=aanyasingh
 
 ### 🧩 Tech Stack 
 
