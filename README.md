@@ -36,11 +36,10 @@ yarn install
 
 This is a comprehensive AI model for eye cancer detection that combines state-of-the-art deep learning techniques with a user-friendly web interface.
 
-### 🟥 AI Model Access 
+### 🟥 AI Model 
 
 The trained AI model (AI.pth) is not included in this repository due to GitHub's file size limitations.
 
-If you'd like access to the model for research or development purposes, you can contact me here: 📩 aanyasingh282004@gmail.com
 
 ### 🧠 About the AI Model
 
