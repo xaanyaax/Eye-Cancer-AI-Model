@@ -1,5 +1,5 @@
 👁️ Eye Cancer Detection Model 🔬🧠
-AI-powered tool for detecting cancer cells in eye images using deep learning and image segment
+AI-powered tool for detecting cancer cells in eye images using deep learning and image segmentation.
 
 
 
