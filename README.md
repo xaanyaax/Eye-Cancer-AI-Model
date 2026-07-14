@@ -1,139 +1,130 @@
-👁️ Eye Cancer Detection Model 🔬🧠
-AI-powered tool for detecting cancer cells in eye images using deep learning and image segmentation.
+# Eye Cancer Detection Model
 
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python\&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-EE4C2C?logo=pytorch\&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi\&logoColor=white)
+![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react\&logoColor=black)
+![License](https://img.shields.io/badge/License-Academic-lightgrey)
 
+An AI-powered eye cancer detection system built using PyTorch, FastAPI, and React. The model performs semantic segmentation and image-level classification to assist in the early detection of ocular cancer from medical images.
 
-![Screenshot from 2025-07-09 22-30-28](https://github.com/user-attachments/assets/b0fe1c85-c73e-4c71-a5b3-bb89f369daf2)
+![Application Screenshot](https://github.com/user-attachments/assets/b0fe1c85-c73e-4c71-a5b3-bb89f369daf2)
 
+---
 
+## Features
 
+* Semantic segmentation for cancer region localization
+* Image-level eye cancer classification
+* FastAPI backend for model inference
+* React frontend for image upload and prediction visualization
+* Modular and easy-to-use project structure
 
+---
 
-Eye Cancer AI Detection Model is a PyTorch implementation of advanced computer vision techniques for early ocular cancer detection, featuring dual-purpose semantic segmentation and image classification capabilities.
+## Model Architecture
+
+The model is implemented using **PyTorch** and is based on:
+
+* SegFormer architecture
+* ResNet-50 encoder
+* `segmentation_models_pytorch`
+* Pixel-level semantic segmentation
+* Image-level cancer classification
+
+> **Note:** The trained model (`AI.pth`) is not included in this repository because of GitHub's file size limitations.
+
+## Pretrained Model
+
+Download the pretrained model from Google Drive:
+
+**AI.pth:**
+https://drive.google.com/file/d/1_PWAppL50ypV1WB-QqeBt6w85vIf3m5K/view?usp=drive_link
+
+After downloading, place the `AI.pth` file inside the appropriate model directory before running inference.
+
+---
+
+## Tech Stack
+
+* Python
+* PyTorch
+* segmentation_models_pytorch
+* FastAPI
+* React
+* Axios
+
+---
 
 ## Installation
 
-You can set up the project using either [pip](https://pip.pypa.io/) for Python dependencies or [npm](https://www.npmjs.com/) for frontend dependencies.
+Clone the repository:
 
-> If you want to checkout the latest features or bugfixes, use `git clone https://github.com/xaanyaax/Eye-Cancer-AI-Model.git`
-
-### Using pip (Backend)
-```bash
-pip install -r requirements.txt
-```
-
-### Using npm (Frontend)
-```bash
-npm install
-```
-
-### Using Yarn (Frontend)
-```bash
-yarn install
-```
-
-## Getting Started
-
-This is a comprehensive AI model for eye cancer detection that combines state-of-the-art deep learning techniques with a user-friendly web interface.
-
-### 🟥 AI Model 
-
-The trained AI model (AI.pth) is not included in this repository due to GitHub's file size limitations.
-
-
-### 🧠 About the AI Model
-
-This repository contains a custom PyTorch implementation of a dual-purpose deep learning model that performs both semantic segmentation and image-level classification.
-
-
-⚠️ **Note**: Model access is shared for academic or non-commercial use only.
-
-- 🧱 Built on the segmentation_models_pytorch library
-- 🧠 Uses the SegFormer architecture with a ResNet-50 encoder  
-- 📊 Capable of both region-wise cancer detection and image-level diagnosis
-- 🧬 Trained on annotated ocular cancer datasets
-- 🎯 Optimized for early detection of eye cancer through pixel-level predictions
-
-
-
-
-
-### ▶️ Watch the Walkthrough 
-
-📺 **YouTube Demo**: https://www.youtube.com/watch?v=tYA1Q-OWQ7c&ab_channel=aanyasingh
-
-### 🧩 Tech Stack 
-
-- ⚙️ **FastAPI** – Backend for serving the AI model
-- ⚛️ **React** – Frontend for uploading images and displaying results  
-- 🔬 **PyTorch + segmentation_models_pytorch** – Core AI model
-- 🌐 **CORS + Axios** – For client-server communication
-
-### 💻 How to Access the Code in VS Code
-
-1. Clone the repository to your local machine:
 ```bash
 git clone https://github.com/xaanyaax/Eye-Cancer-AI-Model.git
 cd Eye-Cancer-AI-Model
 ```
 
-2. Open the folder in VS Code:
-   - Open VS Code
-   - Go to File > Open Folder
-   - Select the cloned eye-cancer-model folder
-   
-   OR open via terminal:
+### Backend
+
 ```bash
-code .
-```
-*(Make sure the code command is set up in your system path.)*
-
-3. Install dependencies and run the app (check README sections or instructions in `/Client` and `/Model` folders for more details).
-
-## Quick Start
-
-### Backend Setup
-```bash
-# Navigate to Model directory
 cd Model
 
-# Create virtual environment
 python -m venv venv
 
-# Activate virtual environment (Windows)
+# Windows
 venv\Scripts\activate
-# Activate virtual environment (macOS/Linux)
+
+# macOS/Linux
 source venv/bin/activate
 
-# Install dependencies
 pip install -r requirements.txt
 
-# Run the FastAPI server
 python main.py
 ```
 
-### Frontend Setup
+### Frontend
+
 ```bash
-# Navigate to Client directory
 cd Client
 
-# Install dependencies
 npm install
 
-# Start the React application
 npm start
 ```
 
+---
 
+## Project Structure
 
+```text
+Eye-Cancer-AI-Model/
+│
+├── Client/          # React frontend
+├── Model/           # FastAPI backend and AI model
+├── requirements.txt
+└── README.md
+```
 
+---
 
+## Demo
 
-## Support
+YouTube Walkthrough:
 
-For questions or support:
-- 📧 Email: aanyasingh282004@gmail.com
-- 🐛 Issues: [GitHub Issues](https://github.com/xaanyaax/Eye-Cancer-AI-Model/issues)
+https://www.youtube.com/watch?v=tYA1Q-OWQ7c
 
-[downloads-image]: https://img.shields.io/npm/dm/web3.svg
-[npm-url]: https://npmjs.org/package/web3
+---
+
+## License
+
+This project is intended for academic and research purposes. The pretrained model is provided for **non-commercial use only**.
+
+---
+
+## Contact
+
+For questions or suggestions, please open an issue on GitHub or contact:
+
+**Email:** [aanyasingh282004@gmail.com](mailto:aanyasingh282004@gmail.com)
+
